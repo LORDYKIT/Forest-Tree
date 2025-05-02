@@ -1,0 +1,105 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 400
+  ClientWidth = 280
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object accountNumEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 26.000000000000000000
+    Position.Y = 98.000000000000000000
+    TextPrompt = 'Account Number'
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object amountEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 149.000000000000000000
+    Position.Y = 98.000000000000000000
+    TextPrompt = 'Amount'
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object SubmitBtn: TButton
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 169.000000000000000000
+    Position.Y = 186.000000000000000000
+    TabOrder = 2
+    Text = 'Submit'
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.Trimming = None
+    ParentShowHint = False
+    ShowHint = True
+    OnClick = SubmitBtnClick
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 26.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 223.000000000000000000
+    Size.Height = 169.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    ParentShowHint = False
+    ShowHint = True
+    Viewport.Width = 219.000000000000000000
+    Viewport.Height = 165.000000000000000000
+  end
+  object Cbtn: TRadioButton
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 26.000000000000000000
+    Position.Y = 171.000000000000000000
+    TabOrder = 5
+    Text = 'Credit'
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object Dbtn: TRadioButton
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 26.000000000000000000
+    Position.Y = 144.000000000000000000
+    TabOrder = 6
+    Text = 'Debit'
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object Label1: TLabel
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 26.000000000000000000
+    Position.Y = 73.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    Text = 'Account Number'
+    TabOrder = 7
+  end
+  object Label2: TLabel
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 152.000000000000000000
+    Position.Y = 73.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    Text = 'Amount in $'
+    TabOrder = 8
+  end
+  object Label3: TLabel
+    StyledSettings = []
+    Position.X = 34.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 223.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Rockwell'
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claDarkolivegreen
+    Text = 'Add New Transaction'
+    TabOrder = 9
+  end
+end

@@ -1,0 +1,91 @@
+object Form7: TForm7
+  Left = 0
+  Top = 0
+  Caption = 'Form7'
+  ClientHeight = 403
+  ClientWidth = 589
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object accountNumEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 429.000000000000000000
+    Position.Y = 43.000000000000000000
+    Hint = 'account num'
+    TextPrompt = 'account num..'
+  end
+  object searchLbL: TLabel
+    StyledSettings = [FontColor]
+    Position.X = 401.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 232.000000000000000000
+    Size.Height = 42.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Verdana'
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Enter Account Number'
+    TabOrder = 1
+  end
+  object Text1: TText
+    Position.X = 401.000000000000000000
+    Position.Y = 149.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 100.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object searchBtn: TButton
+    Position.X = 429.000000000000000000
+    Position.Y = 73.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Search'
+    TextSettings.Trimming = None
+    OnClick = searchBtnClick
+  end
+  object printBtn: TButton
+    Position.X = 429.000000000000000000
+    Position.Y = 103.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Print Report'
+    TextSettings.Trimming = None
+    OnClick = printBtnClick
+  end
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TListItemAppearance'
+    ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Position.X = 24.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 369.000000000000000000
+    Size.Height = 286.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    OnItemClick = ListView1ItemClick
+  end
+  object ListBox1: TListBox
+    Position.X = 24.000000000000000000
+    Position.Y = 302.000000000000000000
+    Size.Width = 369.000000000000000000
+    Size.Height = 83.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 365.000000000000000000
+    Viewport.Height = 79.000000000000000000
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 472
+    Top = 280
+  end
+end

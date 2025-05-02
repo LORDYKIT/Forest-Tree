@@ -1,0 +1,33 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 140
+  ClientWidth = 346
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Title: TLabel
+    StyledSettings = [Family]
+    Position.X = 25.000000000000000000
+    Size.Width = 297.000000000000000000
+    Size.Height = 102.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 21.000000000000000000
+    TextSettings.Font.StyleExt = {00090000000000000004000000}
+    TextSettings.FontColor = claCadetblue
+    TextSettings.WordWrap = False
+    Text = 'Account Managment System'
+    TabOrder = 0
+  end
+  object MenuButton: TButton
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 130.000000000000000000
+    Position.Y = 88.000000000000000000
+    TabOrder = 1
+    Text = 'Go to Menu'
+    TextSettings.Trimming = None
+    OnClick = MenuButtonClick
+  end
+end
